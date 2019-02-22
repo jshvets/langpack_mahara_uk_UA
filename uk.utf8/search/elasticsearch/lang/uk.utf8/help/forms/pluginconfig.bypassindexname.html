@@ -1,0 +1,10 @@
+<!-- @license http://www.gnu.org/copyleft/gpl.html GNU GPL version 3 or later -->
+<!-- @copyright For copyright information on Mahara, please see the README file distributed with this software. -->
+<h3>Bypass index name</h3>
+
+<p>La plupart du temps ce paramètre doit être laissé vide.</p>
+<p>Toutefois, si ce paramètre est renseigné, Mahara chargera les nouvelles données d'index dans l'index d'Elasticsearch tout en continuant de rechercher depuis l'index d'Elasticsearch stocké sous le nom indiqué dans la rubrique « nom d'index ».</p>
+<p>Si vous désirez réindexer tout le site dans un nouvel index, sans toutefois arrêter le moteur de recherche durant ce travail, vous pouvez utiliser cette rubrique pour dériver la réindéxation lancée par le cron dans un nouvel index, puisque les demandes de recherche utiliseront l'ancien index.</p>
+<p>Une fois la queue de recherche vide, copiez ce nom d'index dans la variable <code>$cfg->plugin_search_elasticsearch_indexname</code> dans votre fichier config.php.</p>
+<p>Ce pramètre ne peut pas être modifié depuis l'interface web. Vous devez changer sa valeur dans le fichier config.php file avec la valeur suivante :</p>
+<p><code>$cfg->plugin_search_elasticsearch_bypassindexname</code>.</p>

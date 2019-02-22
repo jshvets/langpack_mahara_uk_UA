@@ -1,0 +1,7 @@
+<!-- @licence http://www.gnu.org/copyleft/gpl.html GNU GPL version 3 ou ultérieure -->
+<!-- @droits d'auteur Pour une information sur les droits d'auteur sur Mahara, veuillez lire le fichier README qui accompagne ce logiciel. -->
+<h3>Nom d'utilisateur d'authentification pour l'écriture dans l'index</h3>
+
+<p>Si votre serveur Elasticsearch nécessite un nom d'utilisateur d'authentification basique HTTP différent pour l'écriture dans l'index, vous pourriez fournir le <strong>indexingusername</strong> ici.<strong> Remarque </ strong>: le logiciel Elasticsearch principal ne propose pas de fonctionnalités de nom d'utilisateur ou de mot de passe, mais vous pouvez utiliser cette fonctionnalité en utilisant un plug-in tel que Search Guard ou en y accédant via un proxy. </ p>
+<p> Ce paramètre ne peut pas être modifié via l'interface Web. Vous pouvez le modifier en définissant une valeur dans votre fichier config.php pour la variable de configuration suivante: </ p>
+<p> <code> $ cfg-> plugin_search_elasticsearch_indexingusername </ code>. </ p>

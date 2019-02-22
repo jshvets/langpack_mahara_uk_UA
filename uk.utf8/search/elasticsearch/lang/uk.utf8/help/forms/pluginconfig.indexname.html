@@ -1,0 +1,7 @@
+<h3>Nom du fichier d'index</h3>
+
+<p>Il s'agit du nom du fichier d'indexation qu'Elasticsearch va utiliser pour effectuer les recherches d'informations sur le site. Normalement vous n'avez pas à modifier celui-ci, à moins que vous n'utilisiez la même « grappe » d'Elasticsearch comme index pour plusieurs sites Mahara, ou lorsque vous avez effectué une réindexation en utilisant le paramètre « Fichier de rocade d'index ».</p>
+<p>Si vous décidez de modifier cette valeur, vous devez ensuite cliquez sur le bouton « Recréer TOUS les index »
+pour lancer la recréation des index.</p>
+<p>Ce paramètre ne peut pas être modifié via l'interface Web. Vous devez modifier votre fichier config.php et changer le paramètre :</p>
+<p><code>$cfg->plugin->search->elasticsearch->indexname</code>.</p>

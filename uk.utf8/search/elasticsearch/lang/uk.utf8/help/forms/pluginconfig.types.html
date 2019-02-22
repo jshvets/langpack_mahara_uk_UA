@@ -1,0 +1,6 @@
+<h3>Type d'éléments à inclure dans Elasticsearch</h3>
+
+<p>Vous devez indiquez ici une liste d'éléments, séparés par une virgule, qu'Elasticsearch va ajouter à son index pour effectuer ses recherches. Chacun des ces éléments doit correspondre à ce qui figure dans la sous-classe ElasticsearchType dans search/elasticsearch/type.</p>
+<p>Vous n'avez pas à modifier ce paramètre, à moins que vous n'ayez implémenté un nouveau type de recherche ou que vous ne désiriez désactiver un type de recherche particulier.</p>
+<p><p>Ce paramètre ne peut pas être modifié via l'interface Web. Vous devez modifier votre fichier config.php et changer le paramètre :</p>
+<p><code>$cfg->plugin->search->elasticsearch->types</code>.</p>

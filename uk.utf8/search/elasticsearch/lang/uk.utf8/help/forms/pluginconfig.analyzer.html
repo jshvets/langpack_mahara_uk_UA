@@ -1,0 +1,8 @@
+<h3>Analyseur d'Elasticsearch </h3>
+
+<p>L'analyseur d'Elasticsearch se charge d'analyser le contenu de la base de données de recherche d'Elasticsearch.</p>
+<p>Maraha utilise le moteur d'analyse embarqué <strong>mahara_analyzer</strong>.</p>
+<p><a href="http://www.elasticsearch.org/guide/reference/index-modules/analysis/custom-analyzer/">Lisez le manuel d'Elasticsearch</a> si vous désirez utiliser un autre moteur d'analyse.</p>
+<p>Ce paramètre ne peut pas être modifié via l'interface Web. Vous devez modifier le fichier config.php et changer le parmamètre :</p>
+<p><code>$cfg->plugin->search->elasticsearch->analyzer</code>.</p>
+<p>Il n'est pas recommandé de modifier la valeur par défaut de ce paramètre, à moins que vous ne sachiez exactement ce que vous faites.</p>
