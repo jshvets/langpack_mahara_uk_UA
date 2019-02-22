@@ -1,0 +1,8 @@
+<!-- @license http://www.gnu.org/copyleft/gpl.html GNU GPL version 3 or later -->
+<!-- @copyright For copyright information on Mahara, please see the README file distributed with this software. -->
+<h3>Synchroniser les groupes avec cron</h3>
+<p>Sélectionez cette option pour activer une tâche dans le cron qui va automatiquement créer et mettre à jour les groupes ainsi que leurs membres, en se basant sur le contenu de la base de données du serveur LDAP. Par défaut, cette tâche cron s'exécute chaque jour à minuit (heure du serveur). Modifiez l'enregistrement dans la table « auth_cron » pour modifier les paramètres ou l'heure à laquelle la mise à jour se fait.</p>
+<p><b>Note :</b> Vous devez aussi activer les options  « Synchroniser les groupes stockés sous forme d'objets LDAP » et / ou « Synchroniser les groupes stockés sous forme d'attributs utilisateur », afin que les groupes puissent être synchronisés.</p>
+<p>Les membres du groupe peuvent être à la fois supprimés ou ajoutés par cette option. Si un groupe n'existe plus dans le LDAP, tous ses membres sont retirés du groupe.</p>
+<p>Ces options n'ont pas d'effet si le cron n'est pas activé. Consultez le
+<a href="https://wiki.mahara.org/wiki/System_Administrator's_Guide/Installing_Mahara">guide d'installation</a> pour obtenir la documentation relative à son installation.</p>

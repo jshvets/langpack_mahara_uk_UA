@@ -1,0 +1,20 @@
+<!-- @license http://www.gnu.org/copyleft/gpl.html GNU GPL version 3 or later -->
+<!-- @copyright For copyright information on Mahara, please see the README file distributed with this software. -->
+<h3>Si un utilisateur n'est plus présent dans le LDAP</h3>
+<p>Ce paramètre détermine ce que le cron doit faire si un utilisateur dans votre
+institution n'est pas trouvé dans le serveur LDAP.</p>
+<p><b>Note :</b> Ces préférences n'impactent que les utilisateurs qui utilisent
+cette méthode d'authentification.</p>
+<dl>
+<dt>Ne rien faire</dt>
+<dd>Aucune action n'est entreprise. (option recommandée.)</dd>
+<dt>Suspendre l'utilisateur</dt>
+<dd>Le compte de l'utilisateur est suspendu. L'utilisateur ne pourra plus se connecter,
+et il ne pourra plus consulter ni modifier ses pages et leur contenu. Toutefois, aucune donnée
+ne sera suppriée; L'utilisateur peut ultérieurement être rétabli lorsque le cron retrouve le compte dnas le serveur LDAP,,
+ou de manière manuelle un administrateur..</dd>
+<dt>Supprimer lutilisateur et toutes ses données</dt>
+<dd><b>Utilisez cette option avec précaution !</b> Le compte de l'utilisateur est supprimé et avec lui tout le contenu 
+du portfolio. Pour revenir en arrière, il faut alors utiliser le contenu qui se trouverait dans une sauvegarde du serveur faite avant 
+la suppression des données de l'utilisateur</dd>
+</dl>

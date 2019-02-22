@@ -1,0 +1,6 @@
+<!-- @license http://www.gnu.org/copyleft/gpl.html GNU GPL version 3 or later -->
+<!-- @copyright For copyright information on Mahara, please see the README file distributed with this software. -->
+<h3>Synchronisation des utilisateurs avec cron</h3>
+<p>Sélectionnez cette option  pour activer une tâche au niveau du cron qui va automatiquement créer et/ou mettre à jour les utilisateurs, en se basant sur les informations contenues sur le serveur LDAP. Par défaut, la tâche cron ne se lance qu'une seule fois par jour, à minuit (heure du serveur). Vous pouvez modifier ceci en éditant l'enregistrement dans la table « auth_cron » ou en utilisant le script en ligne de commande qui se trouve sur  htdocs/auth/ldap/cli/sync_users.php si vous désirez lancer cette tâche cron à un autre moment ou lui adjoindre d'autres paramètres.</p>
+<p>Cette option ne fonctionne que si le cron est activé. Consultez le
+<a href="https://wiki.mahara.org/wiki/System_Administrator's_Guide/Installing_Mahara">guide d'installation</a> pour les informations concernant la configuration du cron.</p>

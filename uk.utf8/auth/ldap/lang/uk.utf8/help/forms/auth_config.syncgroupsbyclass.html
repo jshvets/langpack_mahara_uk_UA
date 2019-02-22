@@ -1,0 +1,11 @@
+<h3>Synchroniser les groupes sotockés dans le LDAP comme objets</h3>
+<p>Activez cette option si vos groupes sont stockés dans le LDAP comme des objets à part entière.</p>
+<p>Exemple :</p>
+<pre>
+dn: cn=languagestudents,ou=groups,dc=mahara,dc=org
+objectClass: groupOfUniqueNames
+cn: languagestudents
+uniqueMember: uid=user1,dc=mahara,dc=org
+uniqueMember: uid=user2,dc=mahara,dc=org
+uniqueMember: cn=frenchclass,ou=groups,dc=mahara,dc=org
+</pre>

@@ -1,0 +1,75 @@
+<?php
+
+defined('INTERNAL') || die();
+
+$string['attributename'] = 'Indiquez l\'attribut du LDAP utilisé pour synchroniser les groupes basés sur cette valeur (requis et la casse doit être respectée)';
+$string['cannotconnect'] = 'Impossible de se connecter à un serveur hôte LDAP.';
+$string['cannotdeleteandsuspend'] = 'Vous ne pouvez spécifier -d et -s en même temps.';
+$string['cli_info_sync_groups'] = 'Cette ligne de commande en langage PHP va synchroniser une liste de groupes d\'une institution avec les informations contenues dans un serveur LDAP.
+Les groupes manquants seront créés et nommés en suivant la forme  « nom de l\'institution : nom du groupe dans le LDAP ».';
+$string['cli_info_sync_groups_attribute'] = 'Cette ligne de commande en langage PHP va synchroniser une liste de groupes d\'une institution avec un serveur LDAP
+basé sur des valeurs différentes contenues dans un attribut LDAP.
+Les groupes manquants seront créés et nommés en suivant la forme  « nom de l\'institution : nom du groupe dans le LDAP ».';
+$string['cli_info_sync_users'] = 'Cette ligne de commande en langage PHP va synchroniser une liste de membres d\'une institution avec un serveur LDAP.';
+$string['contexts'] = 'Contextes';
+$string['description'] = 'Utiliser un serveur LDAP comme source d\'authentification';
+$string['distinguishedname'] = 'Nom distinctif';
+$string['dodelete'] = 'Supprimer les comptes qui ne sont plus dans le LDAP';
+$string['dosuspend'] = 'Suspendre les comptes qui ne sont plus dans le LDAP';
+$string['doupdate'] = 'Mettre à jour les comptes avec les données du LDAP (long)';
+$string['dryrun'] = 'Exécution à blanc. Ne modifie pas la base de données.';
+$string['excludelist'] = 'Exclure les groupes du LDAP dont le nom correspond à cette expression régulière.';
+$string['extrafilterattribute'] = 'Filtre supplémentaire pour restreindre la recherche d\'utilisateurs dans le LDAP';
+$string['grouptype'] = 'Type de groupe Mahara à créer; type « standard » par défaut.';
+$string['hosturl'] = 'URL de l\'hôte';
+$string['includelist'] = 'Uitliser seulement les groupes dont le nom dans le LDAP correspond à l\'expression régulière';
+$string['institutionname'] = 'Nom de l\'institution concernée (requis)';
+$string['ldapconfig'] = 'Configuration du LDAP';
+$string['ldapfieldforemail'] = 'Rubrique LDAP pour le courrier';
+$string['ldapfieldforfirstname'] = 'Rubrique LDAP pour le prénom';
+$string['ldapfieldforpreferredname'] = 'Rubrique LDAP pour le "Nom affiché"';
+$string['ldapfieldforstudentid'] = 'Rubrique LDAP pour le "Numéro d\'étudiant"';
+$string['ldapfieldforsurname'] = 'Rubrique LDAP pour le nom de famille';
+$string['ldapversion'] = 'Version LDAP';
+$string['loginlink'] = 'Permettre aux utilisateurs de lier leur propre compte';
+$string['nocreate'] = 'Ne pas créer des nouveaux comptes';
+$string['nocreatemissinggroups'] = 'Ne pas créer des groupes depuis le LDAP s\'ils n\'existent pas déjà dans l\'institution.';
+$string['nomatchingauths'] = 'Aucun plug-in d\'authentification LDAP n\'a été trouvé pour cette institution.';
+$string['notusable'] = 'Veuillez installer l\'extension PHP LDAP';
+$string['password'] = 'Mot de passe';
+$string['searchcontexts'] = 'Restreindre la recherche aux contextes suivants (annule les réglages faits dans le plug-in d\'authentification)';
+$string['searchsubcontexts'] = 'Recherche dans les sous-contextes';
+$string['searchsubcontextscliparam'] = 'Rechercher (1) ou non (0) dans le sous-contextes (annule les réglages faits dans le plug-in d\'authentification)';
+$string['starttls'] = 'Cryptage TLS';
+$string['syncgroupsautocreate'] = 'Créer automatiquement les groupes manquants';
+$string['syncgroupsbyclass'] = 'Synchroniser les groupes stockés comme objet LDAP';
+$string['syncgroupsbyuserfield'] = 'Synchroniser  les groupes stockés comme attribut d\'utilisateur';
+$string['syncgroupscontexts'] = 'Synchroniser les groupes de ce contexte seulement';
+$string['syncgroupscontextsdesc'] = 'Laisse vide pour fixer la valeur par défaut aux contextes de l\'utilisateur';
+$string['syncgroupscron'] = 'Synchroniser les groupes automatiquement par le script cron';
+$string['syncgroupsexcludelist'] = 'Exclure les groupes LDAP portant ces noms';
+$string['syncgroupsgroupattribute'] = 'Attribut pour le groupe';
+$string['syncgroupsgroupclass'] = 'Classe du groupe';
+$string['syncgroupsgrouptype'] = 'Types de rôle dans les groupes autocréés';
+$string['syncgroupsincludelist'] = 'N\'inclure que les groupes LDAP ayant ces noms';
+$string['syncgroupsmemberattribute'] = 'Attribut pour les membres du groupe';
+$string['syncgroupsmemberattributeisdn'] = 'L\'attribut du membre est-il un dn ?';
+$string['syncgroupsnestedgroups'] = 'Utiliser les groupes inclus';
+$string['syncgroupssettings'] = 'Synchronisation des groupes';
+$string['syncgroupsuserattribute'] = 'Utiliser l\'attribut du nom du groupe stocké dans';
+$string['syncgroupsusergroupnames'] = 'Seulement ces noms de groupe';
+$string['syncgroupsusergroupnamesdesc'] = 'Laisser vide pour accepter n\'importe quelle valeur. Séparer le nom des groupes par une virgule.';
+$string['syncuserscreate'] = 'Créer automatiquement les utilisateurs par le script cron';
+$string['syncuserscron'] = 'Synchroniser automatiquement les utilisateurs par le script cron';
+$string['syncusersextrafilterattribute'] = 'Filtre LDAP supplémentaire pour la synchronisation';
+$string['syncusersgonefromldap'] = 'Si un utilisateur n\'est plus présent dans le LDAP';
+$string['syncusersgonefromldapdelete'] = 'Supprimer le compte';
+$string['syncusersgonefromldapdonothing'] = 'Ne rien faire';
+$string['syncusersgonefromldapsuspend'] = 'Susprendre le compte';
+$string['syncuserssettings'] = 'Synchronisation de l\'utilisateur';
+$string['syncusersupdate'] = 'Mettre à jour les informations sur l\'utilisateur par le script cron';
+$string['title'] = 'LDAP';
+$string['updateuserinfoonlogin'] = 'Mettre à jour les renseignements sur les utilisateurs à la connexion';
+$string['userattribute'] = 'Attribut utilisateur';
+$string['usertype'] = 'Type utilisateur';
+$string['weautocreateusers'] = 'Mahara crée automatiquement les utilisateurs';
