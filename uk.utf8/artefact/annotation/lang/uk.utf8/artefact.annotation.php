@@ -1,108 +1,128 @@
 <?php
+/**
+ *
+ * @package    mahara
+ * @subpackage lang
+ * @author     Catalyst IT Ltd
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL version 3 or later
+ * @copyright  For copyright information on Mahara, please see the README file distributed with this software.
+ *
+ */
 
 defined('INTERNAL') || die();
 
-$string['Annotation'] = 'Annotation';
-$string['Annotationfeedback'] = 'Commentaire';
-$string['Annotations'] = 'Annotations';
-$string['allowannotationfeedback'] = 'Permettre les commentaires';
-$string['annotation'] = 'annotation';
-$string['annotationempty'] = 'Cette rubrique est obligatoire';
-$string['annotationfeedback'] = 'commentaire';
-$string['annotationfeedbackdeletedauthornotification'] = 'Votre commentaire sur %s a été supprimé :
-%s';
-$string['annotationfeedbackdeletedhtml'] = '<div style="padding: 0.5em 0; border-bottom: 1px solid #999;"><strong>Le commentaire sur l\'annotation %s a été supprimé</strong><br>%s</div>
+$string ['pluginname'] = 'Анотація';
+$string ['Annotation'] = 'Анотація';
+$string ['Annotations'] = 'Анотації';
+$string ['annotation'] = 'анотація';
+$string ['annotations'] = 'анотації';
+$string ['Annotationfeedback'] = 'Відгук';
+$string ['annotationfeedback'] = 'відгук';
+$string ['typeannotationfeedback'] = 'Відгуки про анотації';
+$string ['allowannotationfeedback'] = 'Дозволити зворотний зв\'зок';
+$string ['approvalrequired'] = 'Зворотній зв\'зок модерується. Якщо ви вирішите зробити цей відгук публічним, він не буде видимим для інших, доки його не буде схвалено власником. ';
+
+$string ['canteditnotauthor'] = 'Ви не є автором цього відгуку.';
+$string ['annotationfeedbacknotinview'] = 'Відгук %d не на сторінці %d.';
+$string ['cantedittooold'] = 'Ви можете редагувати лише зворотний зв\'зок, який не перевищує %d хвилин.';
+
+$string ['cantedithasreplies'] = 'Ви можете редагувати лише останні відгуки.';
+$string ['annotationfeedbackmadepublic'] = "Зворотній зв'язок опубліковано";
+$string ['annotationfeedbackdeletedauthornotification'] = "Ваш відгук про %s було видалено: \n%s";
+$string ['annotationfeedbackdeletednotificationsubject'] = 'Відгук про %s видалено';
+
+$string ['annotationfeedbackremoved'] = 'Відкликання видалено.';
+$string ['editannotationfeedbackdescription'] = 'Ви можете оновити свій відгук, якщо він старий менше ніж %d хвилин і не має нових відповідей. Після цього ви все ще зможете видалити свої відгуки та додати нові відгуки. ';
+$string ['annotationfeedbackupdated'] = 'Відгуки оновлено.';
+
+$string ['commentremovedbyauthor'] = 'Відгуки, видалені автором';
+$string ['commentremovedbyowner'] = 'Відгуки видалені власником';
+$string ['commentremovedbyadmin'] = 'Відгуки видалено адміністратором';
+$string ['editannotationfeedback'] = 'Змінити відгук';
+$string ['placeannotation'] = 'Додати анотацію';
+$string ['placeannotationfeedback'] = 'Помістити відгук';
+
+$string ['annotationfeedbacksubmitted'] = 'Відправлено відгук.';
+$string ['annotationfeedbacksubmittedmoderatedanon'] = 'Відгук подано, очікується модерація.';
+$string ['annotationfeedbacksubmittedprivateanon'] = 'Надіслано приватний відгук.';
+
+$string ['makepublic'] = 'Зробити публічним';
+$string ['makepublicnotallowed'] = 'Вам не дозволяється публікувати цей відгук.';
+$string ['makepublicrequestsubject'] = 'Запит на зміну приватного відгуку громадськості.';
+$string ['makepublicrequestbyownermessage'] = '%s попросив вас зробити свій відгук публічним.';
+$string ['groupadmins'] = 'Адміністратори групи';
+$string ['makepublicrequestsent'] = 'Повідомлення було надіслано %s для запиту, щоб відгук був оприлюднений.';
+$string ['makepublicrequestbyauthormessage'] = '%s попросив вас зробити свій відгук публічним.';
+
+$string ['annotationempty'] = 'Це поле обов\'зкове.';
+$string ['annotationfeedbackempty'] = 'Ваш відгук порожній. Введіть повідомлення. ';
+
+$string ['newannotationfeedbacknotificationsubject'] = 'Новий відгук на %s';
+$string ['reallydeletethisannotationfeedback'] = 'Ви впевнені, що хочете видалити цей відгук?';
+$string ['annotationfeedbackisprivate'] = 'Цей відгук є приватним.';
+$string ['youhaverequestedpublic'] = 'Ви просили, щоб цей відгук був оприлюднений.';
+
+$string ['annotationfeedbacknotificationhtml'] = '<div style="padding: 0.5em 0; border-bottom: 1px solid #999;"><strong>%s розміщено відгук про анотацію %s </strong><br>%s</div>
 
 <div style="margin: 1em 0;">%s</div>
 
 <div style="font-size: smaller; border-top: 1px solid #999;">
-<p><a href="%s">%s</a></p>
-</div>';
-$string['annotationfeedbackdeletednotificationsubject'] = 'Commentaire sur %s supprimé';
-$string['annotationfeedbackdeletedtext'] = 'Le commentaire sur l\'annotation %s a été supprimé
+<p><a href="%s">Відповісти на цей відгук онлайн</a></p>
+</div> ';
+$string ['annotationfeedbacknotificationtext'] = '%s розмістив відгук про анотацію %s
 %s
-------------------------------------------------------------------------
+-------------------------------------------------- ----------------------
 
 %s
 
-------------------------------------------------------------------------
-Pour afficher %s en ligne, cliquez sur ce lien :
-%s';
-$string['annotationfeedbackempty'] = 'Votre commentaire est vide. Veuillez entrer un message.';
-$string['annotationfeedbackisprivate'] = 'Ce commentaire est privé.';
-$string['annotationfeedbackmadepublic'] = 'Le commentaire a été rendu public';
-$string['annotationfeedbacknotificationhtml'] = '<div style="padding: 0.5em 0; border-bottom: 1px solid #999;"><strong>%s a placé un commentaire sur l\'annotation %s</strong><br>%s</div>
+-------------------------------------------------- ----------------------
+Щоб переглянути та відповісти на відгуки в Інтернеті, перейдіть за цим посиланням:
+%s ';
+$string ['annotationfeedbackdeletedhtml'] = '<div style="padding: 0.5em 0; border-bottom: 1px solid #999;"><strong>Відгуки про анотацію %s видалено </strong><br>%s</div>
 
 <div style="margin: 1em 0;">%s</div>
 
 <div style="font-size: smaller; border-top: 1px solid #999;">
-<p><a href="%s">Répondre en ligne à commentaire</a></p>
-</div>';
-$string['annotationfeedbacknotificationtext'] = '%s a placé un commentaire sur l\'annotation %s
+<p> <a href="%s">%s</a></p>
+</div> ';
+$string ['annotationfeedbackdeletedtext'] = 'Відгук про анотацію %s видалено
 %s
-------------------------------------------------------------------------
+-------------------------------------------------- ----------------------
 
 %s
 
-------------------------------------------------------------------------
-Pour voir et répondre à ce commentaire en ligne, cliquez sur ce lien :
-%s';
-$string['annotationfeedbacknotinview'] = 'Le commentaire %d n\'est pas sur la page %d.';
-$string['annotationfeedbackremoved'] = 'Commentaire supprimé';
-$string['annotationfeedbacksubmitted'] = 'Commentaire placé';
-$string['annotationfeedbacksubmittedmoderatedanon'] = 'Le commentaire a été envoyé et est en attente de modération.';
-$string['annotationfeedbacksubmittedprivateanon'] = 'Commentaire privé envoyé.';
-$string['annotationfeedbackupdated'] = 'Commentaire modifié';
-$string['annotationinformationerror'] = 'Nous n\'avons pas les bonnes informations pour afficher les annotations.';
-$string['annotations'] = 'annotations';
-$string['approvalrequired'] = 'Les commentaires sont modérés. Si vous décidez de rentre ce commentaire public, il ne sera visible des autres utilisateurs que lorsqu’il aura été approuvé par le propriétaire de l\'annotation.';
-$string['artefactdefaultpermissions'] = 'Permissions par défaut d\'annoter';
-$string['artefactdefaultpermissionsdescription'] = 'Les types de productions suivants auront la possibilité de recevoir des commentaires par défaut. Les utilisateurs pourront toutefois modifier ce comportement lors de la création de chaque production.';
-$string['assessmentchangedto'] = 'Évaluation : %s';
-$string['cantedithasreplies'] = 'Vous ne pouvez modifier que le commentaire le plus récent.';
-$string['canteditnotauthor'] = 'Vous n\'êtes pas l\'auteur de ce commentaire.';
-$string['cantedittooold'] = 'Vous pouvez modifier un commentaire pendant %d minutes après sa saisie.';
-$string['commentremovedbyadmin'] = 'Commentaire supprimé par un administrateur';
-$string['commentremovedbyauthor'] = 'Commentaire supprimé par son auteur';
-$string['commentremovedbyowner'] = 'Commentaire supprimé par son propriétaire';
-$string['duplicatedannotation'] = 'Annotation à double';
-$string['duplicatedannotationfeedback'] = 'Annotation à double';
-$string['editannotationfeedback'] = 'Modifier le commentaire';
-$string['editannotationfeedbackdescription'] = 'Vous pouvez modifier votre commentaire dans les %s minutes après sa saisie et pour autant qu\'aucun autre commentaire n\'ait été ajouté après le votre. Après cette durée, vous pourrez toujours supprimer votre commentaire et en ajouter un autre si vous désirez en modifier le contenu.';
-$string['enteredon'] = 'entrée le';
-$string['entriesimportedfromleapexport'] = 'Éléments importés à partir d\'une exportation Leap2A et n\'ayant pas pu être placés automatiquement dans le portfolio';
-$string['existingannotation'] = 'Commentaire déjà existant';
-$string['existingannotationfeedback'] = 'Commentaire déjà existant';
-$string['groupadmins'] = 'Administrateurs du groupe';
-$string['invalidannotationfeedbacklinkerror'] = 'Le commentaire doit être lié à une production ou à une page.';
-$string['invalidcreateannotationfeedback'] = 'Impossible de créer un commentaire non attaché à une production ou à une page';
-$string['makepublic'] = 'Rendre public';
-$string['makepublicnotallowed'] = 'Vous n\'êtes pas autorisé à rendre public ce commentaire';
-$string['makepublicrequestbyauthormessage'] = '%s vous demande de rendre ses commentaires publics.';
-$string['makepublicrequestbyownermessage'] = '%s vous demande de rendre public votre commentaire.';
-$string['makepublicrequestsent'] = 'Un message a été envoyé à %s pour lui demander de rendre le commentaire public.';
-$string['makepublicrequestsubject'] = 'Demande de rendre public ce commentaire privé.';
-$string['nannotationfeedback'] = array(
-    0 => '1 commentaire',
-    1 => '%s commentaires',
+-------------------------------------------------- ----------------------
+Щоб переглянути %s онлайн, перейдіть за цим посиланням:
+%s ';
+
+$string ['artefactdefaultpermissions'] = 'Дозвіл за замовчуванням за замовчуванням';
+$string ['artefactdefaultpermissionsdescription'] = 'Вибрані типи артефактів матимуть зворотний зв\'зок при створенні. Користувачі можуть змінити ці налаштування для окремих артефактів. ';
+
+$string ['annotationinformationerror'] = 'У нас немає потрібної інформації для відображення анотації.';
+
+$string ['invalidannotationfeedbacklinkerror'] = 'Зворотній зв\'зок має бути пов\'заний з артефактом або сторінкою.';
+$string ['entriesimportedfromleapexport'] = 'Записи, імпортовані з експорту Leap2A, які не могли бути імпортовані перенесено в інше місце';
+$string ['unknownstrategyforimport'] = 'Невідома стратегія, обрана для імпортування запису.';
+$string ['invalidcreateannotationfeedback'] = 'Не вдається створити власний відгук.';
+$string ['nannotationfeedback'] = array(
+	"1 відгук",
+	"%s відгуків",
 );
-$string['newannotationfeedbacknotificationsubject'] = 'Nouveau commentaire sur %s';
-$string['nofeedback'] = 'Il n\'y a pas de commentaire pour cette annotation pour l\'instant.';
-$string['noreflectionentryfound'] = 'Impossible de trouver un texte réflexif pour l\'annotation.';
-$string['placeannotation'] = 'Ajouter une annotation';
-$string['placeannotationfeedback'] = 'Placer un commentaire';
-$string['pluginname'] = 'Annotation';
-$string['private'] = 'Privée';
-$string['progress_annotation'] = array(
-    0 => 'Ajouter une annotation à une page',
-    1 => 'Ajouter %s annotations aux pages',
+$string ['progress_annotation'] = array(
+	"Додати 1 анотацію до сторінки",
+	"Додати %s анотацій до сторінок",
 );
-$string['progress_annotationfeedback'] = array(
-    0 => 'Faites un commentaire à l\'annotation d\'un autre utilisateur',
-    1 => 'Faites %s commentaires aux annotations des autres utilisateurs',
+$string ['progress_annotationfeedback'] = array(
+	"Надіслати 1 відгук до анотації іншого користувача",
+	"Надіслати %s відгуків до анотацій інших користувачів",
 );
-$string['public'] = 'Publique';
-$string['reallydeletethisannotationfeedback'] = 'Voulez-vous réellement supprimer ce commentaire ?';
-$string['typeannotationfeedback'] = 'Commentaires sur les annotations';
-$string['unknownstrategyforimport'] = 'Stratégie inconnue utilisée pour importer l\'élément';
-$string['youhaverequestedpublic'] = 'Vous avez demandé à ce que l\'on rende ce commentaire public.';
+$string ['duplicatedannotation'] = 'Анотація дубльована';
+$string ['existingannotation'] = 'Існуючі відгуки';
+$string ['duplicatedannotationfeedback'] = 'Дубльована анотація';
+$string ['existingannotationfeedback'] = 'Існуючі відгуки';
+$string ['private'] = 'Приватний';
+$string ['public'] = 'Публічний';
+$string ['enteron'] = 'увімкнено';
+$string ['noreflectionentryfound'] = 'Неможливо знайти запис відображення для анотації.';
+$string ['nofeedback'] = 'Ще немає коментарів для цього коментаря.';
+$string ['assessmentchangedto'] = 'Оцінка: %s';
